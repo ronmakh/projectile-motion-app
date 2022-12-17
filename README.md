@@ -12,8 +12,8 @@ App is developed using Python 2.7, and UI developed using the Tkinter built-in p
 
 ## Development history
 
-This app was the first app developed by the author during his Engineering Foundation Year at university (year 2016)
+This app was the first app developed by the author whilst studying for his mechanical engineering foundation year at university (year 2016)
 
 App was designed as an interactive tool to teach about projectile motion, which is a classic mechanical engineering theory.
 
-App is no longer maintained by the user (hence lack of code cleanliness, seemingly a noob back then). Fret not, the app is working fine and feel free to give it a try!
+App is no longer maintained by the user (hence lack of code cleanliness from a real noob back then). Fret not, the app is working fine and feel free to give it a try!
