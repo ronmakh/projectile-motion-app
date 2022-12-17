@@ -8,7 +8,7 @@ App is developed using Python 2.7, and UI developed using the Tkinter built-in p
 
 1. Install Python 2.7
 2. Go to app directory and run following command:
-   ``` python projectile_app.py '''
+``` python projectile_app.py '''
 
 ## Development history
 
