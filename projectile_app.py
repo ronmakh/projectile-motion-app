@@ -1,8 +1,8 @@
-from Tkinter import *
+from tkinter import *
 import math
-import tkMessageBox
+from tkinter import messagebox
 import random
-import tkFont
+#import tkFont
 
 main = Tk()
 main.title('Projectile Motion')
@@ -143,7 +143,7 @@ def func_of_DemoPage():
     '..............................................................................................'
 
     def pause():
-        print 'nothing'
+        print ('nothing')
 
     '............................................................................................................'
             
@@ -283,7 +283,7 @@ def func_of_DemoPage():
                     break
 
                 if speed >0 and angle == 0:
-                    tkMessageBox.showinfo('Error', 'The ball will move forever!!! \n This is due to zero friction along the horizontal displacement.')
+                    messagebox.showinfo('Error', 'The ball will move forever!!! \n This is due to zero friction along the horizontal displacement.')
                     break
                     
                 else:
@@ -295,7 +295,7 @@ def func_of_DemoPage():
                     yay.after(100)
                     yay.update()
                     position = yay.coords(line)
-                    print position
+                    print (position)
 
                     yay.create_rectangle(0, 450, 1500, 530, fill = 'black')
 
@@ -456,7 +456,7 @@ def func_of_DemoPage():
                 
 
             if speed >0 and angle == 0:
-                tkMessageBox.showinfo('Error', 'The ball will move forever!!! \n This is due to zero friction along the horizontal displacement.')
+                messagebox.showinfo('Error', 'The ball will move forever!!! \n This is due to zero friction along the horizontal displacement.')
                 break
             
             else:
@@ -469,7 +469,7 @@ def func_of_DemoPage():
                 
                 yay.update()
                 position = yay.coords(line)
-                print position
+                print (position)
 
                 yay.create_rectangle(0, 450, 1500, 530, fill = 'black')
 
@@ -832,7 +832,7 @@ def func_of_AppPage():
     '...............................................................................................................'
     #disable shoot button while shooting
     def pause():
-        print 'Nothing'
+        print ('Nothing')
 
     '............................................................................................................'
     #move nozzle of cannon
@@ -953,7 +953,7 @@ def func_of_AppPage():
                     break
 
                 if speed >0 and angle == 0:
-                    tkMessageBox.showinfo('Error', 'The ball will move forever!!! \n This is due to zero friction along the horizontal displacement.')
+                    messagebox.showinfo('Error', 'The ball will move forever!!! \n This is due to zero friction along the horizontal displacement.')
                     break
                     
                 else:
@@ -965,7 +965,7 @@ def func_of_AppPage():
                     yay.after(100)
                     yay.update()
                     position = yay.coords(proball)
-                    print position
+                    print (position)
                     yay.create_rectangle(0, 450, 1500, 530, fill = 'black')
 
                     t1 = c-50
@@ -987,13 +987,13 @@ def func_of_AppPage():
      
                     if yt>= 425:
                         if counter1 == 0 and counter2 == 0:
-                            tkMessageBox.showinfo('No hit', 'No target hit. Try again! \n \n CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
+                            messagebox.showinfo('No hit', 'No target hit. Try again! \n \n CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
                         if counter1 == 0 and counter2 > 0:
-                            tkMessageBox.showinfo('Target 2 hit!!','CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
+                            messagebox.showinfo('Target 2 hit!!','CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
                         if counter1 > 0 and counter2 == 0:
-                            tkMessageBox.showinfo('Target 1 hit!!','CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
+                            messagebox.showinfo('Target 1 hit!!','CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
                         if counter1 >0 and counter2>0:
-                            tkMessageBox.showinfo('COMBO!!!','Target 1 and Target 2 hit!!! \n \n CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
+                            messagebox.showinfo('COMBO!!!','Target 1 and Target 2 hit!!! \n \n CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
                         break
                     
                     x += 1
@@ -1094,7 +1094,7 @@ def func_of_AppPage():
                 
 
             if speed >0 and angle == 0:
-                tkMessageBox.showinfo('Error', 'The ball will move forever!!! \n This is due to zero friction along the horizontal displacement.')
+                messagebox.showinfo('Error', 'The ball will move forever!!! \n This is due to zero friction along the horizontal displacement.')
                 break
                         
             else:
@@ -1107,7 +1107,7 @@ def func_of_AppPage():
                 yay.after(100)
                 yay.update()
                 position = yay.coords(proball)
-                print position
+                print (position)
                 yay.create_rectangle(0, 450, 1500, 530, fill = 'black')
 
                 t1 = c-50
@@ -1129,13 +1129,13 @@ def func_of_AppPage():
  
                 if yt>= 425:
                     if counter1 == 0 and counter2 == 0:
-                        tkMessageBox.showinfo('No hit', 'No target hit. Try again! \n \n CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
+                        messagebox.showinfo('No hit', 'No target hit. Try again! \n \n CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
                     if counter1 == 0 and counter2 > 0:
-                        tkMessageBox.showinfo('Target 2 hit!!', 'CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
+                        messagebox.showinfo('Target 2 hit!!', 'CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
                     if counter1 > 0 and counter2 == 0:
-                        tkMessageBox.showinfo('Target 1 hit!!','CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
+                        messagebox.showinfo('Target 1 hit!!','CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
                     if counter1 >0 and counter2>0:
-                        tkMessageBox.showinfo('COMBO!!!','Target 1 and Target 2 hit!!! \n \n CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
+                        messagebox.showinfo('COMBO!!!','Target 1 and Target 2 hit!!! \n \n CANNONBALL TRAJECTORY: \n Resultant Speed: %s m/s \n Angle: %s degrees \n X Velocity: %s m/s \n Y Velocity: %s m/s \n Air Time: %s s \n Max Height: %s m \n Range: %s m' %(Speed, Angle, XMotion, YMotion, AirTime, MaxHeight, Range1))
                     break
                 
                 x += 1
