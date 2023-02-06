@@ -2,12 +2,13 @@
 
 This repository contains an app designed for interactive learning on the projectile motion theory through explanation of the teory, an integractive game and conclusion (theory explanation and game/demo instructions are shown in app)
 
-App is developed using Python 2.7, and UI developed using the Tkinter built-in package
+App is developed using Python 2.7 (updated to Python 3 version), and UI developed using the Tkinter
 
 ## How to run
 
-1. Install Python 2.7
-2. Go to app directory and run following command:
+1. Install Python 3
+2. Install tkinter using pip: ```pip install tkinter```
+3. Go to app directory and run following command:
 ``` python projectile_app.py ```
 
 ## Development history
